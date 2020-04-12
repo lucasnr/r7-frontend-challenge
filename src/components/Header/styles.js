@@ -12,10 +12,14 @@ export const Container = styled.header`
 `;
 
 export const Logo = styled.img`
-	height: 12rem;
+	height: 9rem;
 	left: -0.875rem;
 	position: absolute;
 	bottom: -0.5rem;
+
+	@media (min-width: 386px) {
+		height: 12rem;
+	}
 `;
 
 Logo.defaultProps = {
@@ -31,8 +35,12 @@ export const Title = styled.h1`
 	font-weight: 700;
 	letter-spacing: -0.25rem;
 	margin-top: auto;
-	padding: 0.25rem 2rem;
+	padding: 0.25rem 1rem 0.25rem 2rem;
 	text-align: right;
 	text-transform: uppercase;
 	width: 85%;
+
+	@media (min-width: 386px) {
+		padding-right: 2rem;
+	}
 `;
