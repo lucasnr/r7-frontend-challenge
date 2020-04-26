@@ -2,14 +2,9 @@ import React from 'react';
 
 import { Container, Image, Name, Description, Order } from './styles';
 
-import { MemberType } from '../../../services/api';
+import IMember from '../../../types/Member';
 
-const Member: React.FC<MemberType> = ({
-	name,
-	picture,
-	description,
-	order,
-}) => {
+const Member: React.FC<IMember> = ({ name, picture, description, order }) => {
 	return (
 		<Container>
 			<Image>

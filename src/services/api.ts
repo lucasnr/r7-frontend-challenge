@@ -1,16 +1,9 @@
 import axios from 'axios';
 
-export interface MemberType {
-	__id: string;
-	name: string;
-	description: string;
-	picture: string;
-	positive: number;
-	order?: number;
-}
+import IMember from '../types/Member';
 
 interface MembersResponse {
-	data: MemberType[];
+	data: IMember[];
 }
 
 export const getMembers = () =>
