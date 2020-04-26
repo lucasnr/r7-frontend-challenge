@@ -2,11 +2,13 @@ import React from 'react';
 
 import { Container, Logo, Title } from './styles';
 
-export default function Header() {
+const Header: React.FC = () => {
 	return (
 		<Container>
 			<Logo />
 			<Title>Ranking</Title>
 		</Container>
 	);
-}
+};
+
+export default Header;

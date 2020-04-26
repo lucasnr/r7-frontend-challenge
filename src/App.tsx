@@ -4,7 +4,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import Header from './components/Header';
 import Ranking from './components/Ranking';
 
-export default function App() {
+const App: React.FC = () => {
 	return (
 		<>
 			<GlobalStyle />
@@ -14,4 +14,6 @@ export default function App() {
 			</main>
 		</>
 	);
-}
+};
+
+export default App;
